@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+button{
+  font-family: "Quicksand", sans-serif;
+  background: none;
+  border: none;
+}
+body{
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px -1px 10px 4px rgba(0,0,0,0.19); 
+  box-shadow: 0px -1px 10px 4px rgba(0,0,0,0.19);
+}
+header div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2px
+}
+header button{
+  font-size: 1.1rem;
+}
+header img{
+  height: 1.2rem;
+}
+main{
+ background: #fafafa;
+ min-height: 100vh;
+}.search-controles{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.search-bar{
+  flex:1;
+  max-width:18rem;
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  gap: 7px;
+  border-radius: 4px;
+}
+.search-bar img{  height: 1.2rem;}
+input{
+  flex:1;
+  padding: 4px;
+  border: none;
+  width: 80%;
+  background: none;
+}
+input:focus{
+  outline: none;
+
+}
+.search-area{ 
+  position :relative;
+  flex:1; 
+  display: flex;
+  padding: 9px;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  max-width: 11rem;
+  border-radius: 4px;
+  }
+  .search-area button{
+    flex: 1;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+  }
+.options{
+  background: white;
+  border-radius: 4px;
+  width: 100%;
+  position: absolute;
+  top:140%;
+  right:0%;
+  padding: 7px;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.options li{
+  padding: 4px;
+ 
+}
+.options li button{
+  background: none;
+  border: none;
+  border-bottom: 1px white solid;
+}
+.options li button:hover{
+  border-color: rgb(28, 27, 27);
+}
+.card-container{
+  display: grid;
+  padding: 3rem 7rem;
+  gap: 50px;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+.card{
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+.card img{
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  width: 100%;
+  height: 50%;
+}
+.card-title{
+  text-align: center;
+  font-weight: bold;
+  margin:14px ;
+  font-size: 0.9rem;
+}
+.card-description{
+  text-align: center;
+  font-size: 0.7rem;
+
+}
