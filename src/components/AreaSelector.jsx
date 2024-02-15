@@ -12,6 +12,9 @@ export default function AreaSelector() {
   function handleDropDown() {
     seIsOpen((prev) => (prev ? false : true));
   }
+  function handleCloseMenu() {
+    seIsOpen(false);
+  }
 
   const ref = useRef(null);
 
@@ -28,6 +31,7 @@ export default function AreaSelector() {
         {isOpen && (
           <AnimatePresence>
             <motion.ul
+              onBlur={handleCloseMenu}
               ref={ref}
               initial={{ y: -70, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

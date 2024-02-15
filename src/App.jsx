@@ -1,17 +1,30 @@
 import CountriesContextProvider from "./context/CountriesContext";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootPage from "./pages/Root";
+import Main from "./pages/Main";
+import CountrieInfo from "./pages/CountrieInfo";
 
-import Header from "./components/Header";
-import SearchControles from "./components/SearchControles";
-import CountrieCards from "./components/CountrieCards";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootPage />,
+    children: [
+      {
+        path: "/",
+        element: <Main />,
+      },
+      {
+        path: "/:countrieId",
+        element: <CountrieInfo />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
     <CountriesContextProvider>
-      <Header />
-      <main>
-        <SearchControles />
-        <CountrieCards />
-      </main>
+      <RouterProvider router={router} />
     </CountriesContextProvider>
   );
 }
