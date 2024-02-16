@@ -31,7 +31,6 @@ export default function AreaSelector() {
         {isOpen && (
           <AnimatePresence>
             <motion.ul
-              onBlur={handleCloseMenu}
               ref={ref}
               initial={{ y: -70, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

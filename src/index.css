@@ -142,10 +142,10 @@ input:focus{
 .options li button{
   background: none;
   border: none;
-  border-bottom: 1px white solid;
+  border-bottom: 1px var(--bg-color) solid;
 }
 .options li button:hover{
-  border-color: rgb(28, 27, 27);
+  border-color: var(--text-color);
 }
 .card-layout{
   align-items: center;
