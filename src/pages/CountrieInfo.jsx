@@ -11,7 +11,7 @@ export default function CountrieInfo() {
   }
   return (
     <div className="info">
-      <NavLink to={"/"}>Back</NavLink>
+      <NavLink to={"/vite-react-router/"}>Back</NavLink>
       <div className="info-layout">
         <img src={countries[countrieId].flags.png} alt="" />
         <div className="info-container">

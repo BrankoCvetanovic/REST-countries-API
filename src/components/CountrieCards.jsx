@@ -15,7 +15,7 @@ export default function CountrieCards() {
         {countries &&
           countries.map((country, index) => {
             return (
-              <NavLink to={`/${index}`} className={"card"}>
+              <NavLink to={`${index}`} className={"card"}>
                 <CountrieCard
                   key={country.name.common}
                   name={country.name.common}

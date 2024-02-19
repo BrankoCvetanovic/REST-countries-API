@@ -1,11 +1,10 @@
 {
   "name": "react-essentials-start",
   "version": "0.0.0",
-  "homepage": "https://brankocvetanovic.github.io/worldAPI/",
+  "homepage": "https://brankocvetanovic.github.io/REST-countries-API/",
   "scripts": {
-      "deploy": "vite build && gh-pages -d dist",
-      "predeploy": "rm -rf dist",
- 
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

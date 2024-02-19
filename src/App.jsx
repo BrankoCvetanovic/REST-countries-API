@@ -4,25 +4,22 @@ import RootPage from "./pages/Root";
 import Main from "./pages/Main";
 import CountrieInfo from "./pages/CountrieInfo";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <RootPage />,
-      children: [
-        {
-          path: "/",
-          element: <Main />,
-        },
-        {
-          path: "/:countrieId",
-          element: <CountrieInfo />,
-        },
-      ],
-    },
-  ],
-  { basename: import.meta.env.DEV ? "/" : "/react-vite-gh-pages/" }
-);
+const router = createBrowserRouter([
+  {
+    path: "/vite-react-router/",
+    element: <RootPage />,
+    children: [
+      {
+        path: "/vite-react-router/",
+        element: <Main />,
+      },
+      {
+        path: "/vite-react-router/:countrieId",
+        element: <CountrieInfo />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
