@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "homepage": "https://brankocvetanovic.github.io/worldAPI/",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+      "deploy": "vite build && gh-pages -d dist",
+      "predeploy": "rm -rf dist",
+ 
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

@@ -2,6 +2,8 @@ Practice Project
 
 REST countries API:
 
--React,
--React Router,
+-React
+
+-React Router
+
 -Dark Mode
