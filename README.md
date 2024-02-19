@@ -1,5 +1,7 @@
-Practice project
+Practice Project
 
-REST countries API,
-React Router,
-Dark Mode.
+REST countries API:
+
+-React,
+-React Router,
+-Dark Mode
