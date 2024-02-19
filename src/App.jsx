@@ -6,15 +6,15 @@ import CountrieInfo from "./pages/CountrieInfo";
 
 const router = createBrowserRouter([
   {
-    path: "/vite-react-router/",
+    path: "/REST-countries-API/",
     element: <RootPage />,
     children: [
       {
-        path: "/vite-react-router/",
+        path: "/REST-countries-API/",
         element: <Main />,
       },
       {
-        path: "/vite-react-router/:countrieId",
+        path: "/REST-countries-API/:countrieId",
         element: <CountrieInfo />,
       },
     ],
